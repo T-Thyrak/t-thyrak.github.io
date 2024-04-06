@@ -3,30 +3,31 @@
 import { ReactNode, useEffect, useRef, useState } from "react";
 
 export function FadeInObject({
-    children,
-    className,
+  children,
+  className,
 }: Readonly<{
-    children: ReactNode;
-    className?: string;
+  children: ReactNode;
+  className?: string;
 }>): JSX.Element {
-    const [isTextVisible, setIsTextVisible] = useState(false);
-    const domRef = useRef<HTMLDivElement>(null);
+  const [isTextVisible, setIsTextVisible] = useState(false);
+  const domRef = useRef<HTMLDivElement>(null);
 
-    useEffect(() => {
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => setIsTextVisible(entry.isIntersecting));
-        });
-        observer.observe(domRef.current);
-        return () => observer.unobserve(domRef.current);
-    }, []);
+  useEffect(() => {
+    const currentRef = domRef.current;
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => setIsTextVisible(entry.isIntersecting));
+    });
+    observer.observe(currentRef);
+    return () => observer.unobserve(currentRef);
+  }, []);
 
-    return (
-        <div
-            className={`${className} fade-in-section ${
-                isTextVisible ? "is-visible" : ""
-            }`}
-            ref={domRef}>
-            {children}
-        </div>
-    );
+  return (
+    <div
+      className={`${className} fade-in-section ${
+        isTextVisible ? "is-visible" : ""
+      }`}
+      ref={domRef}>
+      {children}
+    </div>
+  );
 }
