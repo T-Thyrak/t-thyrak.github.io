@@ -52,14 +52,17 @@ export default function OverviewStage() {
               </div>
             </div>
 
-            <button className="m-4 px-4 py-1 rounded-xl border-2 border-sapphire keep-border bg-surface0 hover:bg-surface1">
+            <a
+              href="cvs/Final-Teng-Thaisothyrak-CV-Machine-Learning-Engineer.pdf"
+              download
+              className="m-4 px-4 py-1 rounded-xl border-2 border-sapphire keep-border bg-surface0 hover:bg-surface1">
               <div className="space-x-2">
                 <span>
                   <FontAwesomeIcon icon={faFilePdf} />
                 </span>
                 <span>Get my CV!</span>
               </div>
-            </button>
+            </a>
           </div>
         </FadeInObject>
       </div>
