@@ -14,6 +14,7 @@ export function FadeInObject({
 
   useEffect(() => {
     const currentRef = domRef.current;
+    if (!currentRef) return;
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => setIsTextVisible(entry.isIntersecting));
     });
