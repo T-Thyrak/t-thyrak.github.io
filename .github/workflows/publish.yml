@@ -1,7 +1,7 @@
 name: publish-to-github-pages
 on:
   push:
-    braches:
+    branches:
       - master
 
 permissions:
