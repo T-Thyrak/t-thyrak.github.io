@@ -6,7 +6,7 @@ export function FadeInObject({
   children,
   className,
 }: Readonly<{
-  children: ReactNode;
+  children?: ReactNode;
   className?: string;
 }>): JSX.Element {
   const [isTextVisible, setIsTextVisible] = useState(false);

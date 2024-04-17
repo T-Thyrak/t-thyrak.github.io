@@ -3,6 +3,7 @@ import Navbar from "@/components/navbar";
 import OverviewStage from "@/components/stages/overview";
 import ExperiencesStage from "@/components/stages/experiences";
 import SkillsStage from "@/components/stages/skills";
+import ProjectsStage from "@/components/stages/projects";
 import { StickyButton } from "@/components/sticky";
 import UnderConstruction from "@/components/under_construction";
 
@@ -17,29 +18,32 @@ export default function Home() {
 
 function Page() {
   return (
-    <div>
+    <>
       <Navbar />
       <Content />
       <StickyButton />
-    </div>
+    </>
   );
 }
 
 function Content() {
   return (
-    <div>
-      <FadeInObject className="flex flex-col items-center justify-center w-full h-full translate-y-4">
+    <>
+      <FadeInObject className="flex flex-col items-center justify-center w-full h-full translate-y-4 z-20">
         <OverviewStage />
       </FadeInObject>
-      <FadeInObject className="flex flex-col items-center justify-center w-full h-full translate-y-4">
+      <FadeInObject className="flex flex-col items-center justify-center w-full h-full translate-y-4 z-10">
         <ExperiencesStage />
       </FadeInObject>
       <FadeInObject className="flex flex-col items-center justify-center w-full h-full translate-y-4">
         <SkillsStage />
       </FadeInObject>
       <FadeInObject className="flex flex-col items-center justify-center w-full h-full translate-y-4">
+        <ProjectsStage />
+      </FadeInObject>
+      <FadeInObject className="flex flex-col items-center justify-center w-full h-full translate-y-4">
         <UnderConstruction />
       </FadeInObject>
-    </div>
+    </>
   );
 }

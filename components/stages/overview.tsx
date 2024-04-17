@@ -4,8 +4,18 @@ import Image from "next/image";
 import { FadeInObject } from "@/components/extra/fades";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
+import Dropdown from "@/components/dropdown";
 
 export default function OverviewStage() {
+  const items = [
+    {
+      label: "Machine Learning",
+      options: {
+        target: "_blank",
+        href: "cvs/Final-Teng-Thaisothyrak-CV-Machine-Learning-Engineer.pdf",
+      },
+    },
+  ];
   return (
     <div className="flex flex-col items-center justify-center h-full w-full my-8">
       <h1 className="text-5xl font-bold m-2" id="overview">
@@ -46,13 +56,15 @@ export default function OverviewStage() {
                 </p>
                 <br />
                 <p>
-                  I am also qualified for Cisco&quot;s CyberOperations
+                  I am also qualified for Cisco&apos;s CyberOperations
                   Associate.
                 </p>
               </div>
             </div>
 
-            <a
+            <Dropdown items={items} mainLabel="Get my CV!" />
+
+            {/* <a
               href="cvs/Final-Teng-Thaisothyrak-CV-Machine-Learning-Engineer.pdf"
               download
               className="m-4 px-4 py-1 rounded-xl border-2 border-sapphire keep-border bg-surface0 hover:bg-surface1">
@@ -62,7 +74,7 @@ export default function OverviewStage() {
                 </span>
                 <span>Get my CV!</span>
               </div>
-            </a>
+            </a> */}
           </div>
         </FadeInObject>
       </div>
