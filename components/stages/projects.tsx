@@ -68,6 +68,49 @@ export default function ProjectsStage() {
         </>
       ),
     },
+
+    {
+      header: (
+        <h2 className="text-3xl font-bold">
+          <NTLink href="https://github.com/satyaprogrammer/buynow-react-project">
+            BuyNow
+          </NTLink>
+        </h2>
+      ),
+      body: (
+        <>
+          <p>
+            BuyNow is a simple e-commerce website that allows users to buy
+            various products. Made as a capstone project.
+          </p>
+          <br />
+          <p>
+            <span className="font-bold">Technologies:</span> React, Redux,
+            Stripe, Python, Flask, SQL
+          </p>
+        </>
+      ),
+    },
+
+    {
+      header: (
+        <h2 className="text-3xl font-bold">
+          <NTLink href="https://github.com/t-thyrak/coffee-shop-management">
+            Coffee Shop Management
+          </NTLink>
+        </h2>
+      ),
+      body: (
+        <>
+          <p>A simple coffee shop management system written in Java.</p>
+          <br />
+          <p>
+            <span className="font-bold">Technologies:</span> Java, JavaFX,
+            Maven, SQL
+          </p>
+        </>
+      ),
+    },
   ];
   return (
     <div className="flex flex-col items-center justify-center h-full w-full my-8">

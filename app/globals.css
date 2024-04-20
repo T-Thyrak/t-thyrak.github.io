@@ -1,10 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* 
+
 :not(.keep-border) {
   border: 0;
-} */
+}
 
 :root {
   /* --foreground: var(--nxp-color-black); */

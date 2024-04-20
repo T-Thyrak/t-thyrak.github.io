@@ -9,10 +9,26 @@ import Dropdown from "@/components/dropdown";
 export default function OverviewStage() {
   const items = [
     {
-      label: "Machine Learning",
+      label: "Data Engineer",
+      options: {
+        target: "_blank",
+        href: "cvs/Final-Teng-Thaisothyrak-CV-Data-Engineer.pdf",
+      },
+    },
+
+    {
+      label: "Machine Learning Engineer",
       options: {
         target: "_blank",
         href: "cvs/Final-Teng-Thaisothyrak-CV-Machine-Learning-Engineer.pdf",
+      },
+    },
+
+    {
+      label: "Software Developer (Web)",
+      options: {
+        target: "_blank",
+        href: "cvs/Final-Teng-Thaisothyrak-CV-Software-Developer-(Web).pdf",
       },
     },
   ];
