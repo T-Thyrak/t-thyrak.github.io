@@ -97,11 +97,34 @@ export default function ExperiencesStage() {
               </li>
             </ul>
           </li>
-          <li className="ms-4">
+
+          <li className="mb-10 ms-4">
             <div className="absolute w-3 h-3 bg-teal rounded-full -start-1.5 border border-teal keep-border"></div>
             <p className="mb-1 text-sm text-teal font-normal leading-none">
-              <time dateTime="2022-10">October</time>
-              to <time dateTime="2022-12">December, 2022</time>
+              <time dateTime="2023-03">March</time> to{" "}
+              <time dateTime="2023-05">May, 2023</time>
+            </p>
+            <h3 className="text-lg font-semibold">Backend Developer</h3>
+            <h4 className="text-lg text-sky">
+              Cambodia Academy of Digital Technology, Assignment Project
+            </h4>
+            <ul className="mb-4 text-sm text-subtext0 font-normal list-disc ml-4">
+              <li>
+                Responsible for the development of the backend system and
+                database.
+              </li>
+              <li>
+                Learned what makes a good database schema, database
+                normalization, and how to create a sensible REST API.
+              </li>
+              <li>Trusted to be a competent backend developer.</li>
+            </ul>
+          </li>
+          <li className="mb-10 ms-4">
+            <div className="absolute w-3 h-3 bg-teal rounded-full -start-1.5 border border-teal keep-border"></div>
+            <p className="mb-1 text-sm text-teal font-normal leading-none">
+              <time dateTime="2022-10">October</time> to{" "}
+              <time dateTime="2022-12">December, 2022</time>
             </p>
             <h3 className="text-lg font-semibold">Machine Learning Engineer</h3>
             <h4 className="text-lg text-sky">
@@ -124,6 +147,51 @@ export default function ExperiencesStage() {
                 The system is able to interact with 2 different interfaces
               </li>
               <li>Trusted to be a competent machine learning engineer.</li>
+            </ul>
+          </li>
+          <li className="mb-10 ms-4">
+            <div className="absolute w-3 h-3 bg-teal rounded-full -start-1.5 border border-teal keep-border"></div>
+            <p className="mb-1 text-sm text-teal font-normal leading-none">
+              <time dateTime="2022-03">March</time> to{" "}
+              <time dateTime="2022-05">May, 2022</time>
+            </p>
+            <h3 className="text-lg font-semibold">Software Developer</h3>
+            <h4 className="text-lg text-sky">
+              Cambodia Academy of Digital Technology, Assignment Project
+            </h4>
+            <ul className="mb-4 text-sm text-subtext0 font-normal list-disc ml-4">
+              <li>
+                Developed a{" "}
+                <NTLink href="https://github.com/t-thyrak/coffee-shop-management">
+                  PoS application
+                </NTLink>
+                , a simple coffee shop management system using JavaFX.
+              </li>
+              <li>
+                Learned how to create GUI applications, software design, and
+                design patterns.
+              </li>
+            </ul>
+          </li>
+          <li className="ms-4">
+            <div className="absolute w-3 h-3 bg-teal rounded-full -start-1.5 border border-teal keep-border"></div>
+            <p className="mb-1 text-sm text-teal font-normal leading-none">
+              <time dateTime="2022-01">January</time> to{" "}
+              <time dateTime="2022-05">May, 2022</time>
+            </p>
+            <h3 className="text-lg font-semibold">Mobile Frontend Developer</h3>
+            <h4 className="text-lg text-sky">Tos Rean Startup</h4>
+            <ul className="mb-4 text-sm text-subtext0 font-normal list-disc ml-4">
+              <li>
+                Took the various development roles in the startup to ensure
+                reliability of the service and usability in the UX in the form
+                of multi-language support.
+              </li>
+              <li>
+                Learned how to use Flutter for cross-platform application
+                development.
+              </li>
+              <li>Continually trusted to be a competent developer.</li>
             </ul>
           </li>
         </ol>

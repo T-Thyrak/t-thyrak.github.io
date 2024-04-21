@@ -9,17 +9,21 @@ function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
+type DropdownItem = Readonly<{
+  label: string;
+  options: {
+    target?: string;
+    href: string;
+  };
+}>;
+
+type DropdownItems = ReadonlyArray<DropdownItem>;
+
 export default function Dropdown({
   items,
   mainLabel,
 }: Readonly<{
-  items: ReadonlyArray<{
-    label: string;
-    options: {
-      target?: string;
-      href: string;
-    };
-  }>;
+  items: DropdownItems;
   mainLabel: string;
 }>) {
   return (

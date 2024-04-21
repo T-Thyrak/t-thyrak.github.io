@@ -1,5 +1,4 @@
-import { FadeInObject } from "@/components/extra/fades";
-import Navbar from "@/components/navbar";
+import { FadeInObject } from "@/components/ui/fades";
 import OverviewStage from "@/components/stages/overview";
 import ExperiencesStage from "@/components/stages/experiences";
 import SkillsStage from "@/components/stages/skills";
@@ -19,7 +18,6 @@ export default function Home() {
 function Page() {
   return (
     <>
-      <Navbar />
       <Content />
       <StickyButton />
     </>

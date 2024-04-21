@@ -1,9 +1,15 @@
 import type { Metadata } from "next";
 import { Ubuntu_Mono } from "next/font/google";
+
 import "./globals.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
+
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
+import { ThemeProvider } from "@/components/theme_provider";
+import View from "./view";
 
 const font = Ubuntu_Mono({
   weight: ["400"],
@@ -21,10 +27,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${font.className} dark:mocha latte bg-base text-text`}>
-        {children}
-      </body>
+    <html lang="en" suppressHydrationWarning>
+      <ThemeProvider>
+        <View font={font.className}>
+          <div className="mt-8 mb-2">
+            <Navbar />
+          </div>
+          {children}
+          <Footer />
+        </View>
+      </ThemeProvider>
     </html>
   );
 }

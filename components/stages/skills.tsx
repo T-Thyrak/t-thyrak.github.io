@@ -1,4 +1,4 @@
-import { FadeInObject } from "../extra/fades";
+import { FadeInObject } from "@/components/ui/fades";
 
 function ProgressBar({
   value,

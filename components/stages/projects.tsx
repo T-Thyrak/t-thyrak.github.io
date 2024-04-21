@@ -1,5 +1,5 @@
 import { Desktop, Mobile } from "@/components/media";
-import { Card, CardBody, CardHeader } from "@/components/extra/cards";
+import { Card, CardBody, CardHeader } from "@/components/ui/cards";
 import NTLink from "@/components/ntlink";
 
 export default function ProjectsStage() {

@@ -1,7 +1,7 @@
 // "use client";
 
 import Image from "next/image";
-import { FadeInObject } from "@/components/extra/fades";
+import { FadeInObject } from "@/components/ui/fades";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
 import Dropdown from "@/components/dropdown";
@@ -29,6 +29,14 @@ export default function OverviewStage() {
       options: {
         target: "_blank",
         href: "cvs/Final-Teng-Thaisothyrak-CV-Software-Developer-(Web).pdf",
+      },
+    },
+
+    {
+      label: "Full Stack Developer",
+      options: {
+        target: "_blank",
+        href: "cvs/Final-Teng-Thaisothyrak-CV-Full-Stack-Developer.pdf",
       },
     },
   ];
