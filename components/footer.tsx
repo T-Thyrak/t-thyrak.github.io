@@ -13,9 +13,10 @@ export default function Footer() {
             <li>
               <FontAwesomeIcon icon={faEnvelope} />
               <a
-                href="mailto:bus.teng.thaisothyrak@gmail.com"
+                href="mailto:bus.teng.thaisothyrak+portfolio@gmail.com"
                 target="_blank"
-                className="ml-2 underline">
+                className="ml-2 underline"
+              >
                 bus.teng.thaisothyrak@gmail.com
               </a>
             </li>
@@ -24,7 +25,8 @@ export default function Footer() {
               <a
                 href="https://t.me/teng_thaisothyrak"
                 target="_blank"
-                className="ml-2 underline">
+                className="ml-2 underline"
+              >
                 @teng_thaisothyrak
               </a>
             </li>
@@ -33,9 +35,10 @@ export default function Footer() {
       </div>
       <div>
         <p className="text-subtext0">
-          &copy; 2024 Teng Thaisothyrak
+          &copy; 2025 Teng Thaisothyrak
           <br />
-          Powered by Next.js, Tailwind CSS, and GitHub Pages.
+          Powered by Next.js, Tailwind CSS, GitHub Pages, and a moderate amount
+          of sillyness.
         </p>
       </div>
     </footer>

@@ -14,6 +14,62 @@ export default function ExperiencesStage() {
           <li className="mb-10 ms-4">
             <div className="absolute w-3 h-3 bg-teal rounded-full -start-1.5 border border-teal keep-border"></div>
             <p className="mb-1 text-sm text-teal font-normal leading-none">
+              <time dateTime="2024-10">Oct, 2024</time> to{" "}
+              <time dateTime="2025-02">Feb, 2025</time>
+            </p>
+            <h3 className="text-lg font-semibold">Software Developer</h3>
+            <h4 className="text-lg text-sky">Umanlink</h4>
+            <ul className="mb-4 text-sm text-subtext0 font-normal list-disc ml-4">
+              <li>
+                Developed and deployed internal AI projects regarding LLM for{" "}
+                <NTLink href="https://en.wikipedia.org/wiki/Retrieval-augmented_generation">
+                  RAG (Retrieval Augmented Generation)
+                </NTLink>
+              </li>
+              <li>
+                Responsible for continued development and improvements for the
+                backend system of the RAG system
+              </li>
+              <li>Learned about the latest RAG technologies</li>
+            </ul>
+          </li>
+          <li className="mb-10 ms-4">
+            <div className="absolute w-3 h-3 bg-teal rounded-full -start-1.5 border border-teal keep-border"></div>
+            <p className="mb-1 text-sm text-teal font-normal leading-none">
+              <time dateTime="2024-05">May</time> to{" "}
+              <time dateTime="2024-09">Sep, 2024</time>
+            </p>
+            <h3 className="text-lg font-semibold">Software Developer Intern</h3>
+            <h4 className="text-lg text-sky">Umanlink</h4>
+            <ul className="mb-4 text-sm text-subtext0 font-normal list-disc ml-4">
+              <li>
+                Developed and deployed internal AI projects regarding LLM and
+                other technologies
+              </li>
+              <li>
+                Responsible for the development and designing the AI application
+                system
+              </li>
+              <li>
+                Learned about the latest AI and speech-related (
+                <NTLink href="https://openai.com/index/whisper">
+                  OpenAI Whisper
+                </NTLink>
+                ,{" "}
+                <NTLink href="https://openai.com/index/introducing-the-realtime-api">
+                  OpenAI Realtime API
+                </NTLink>
+                ){" "}
+                <NTLink href="https://en.wikipedia.org/wiki/Seq2seq">
+                  sequence-to-sequence
+                </NTLink>{" "}
+                AI technologies
+              </li>
+            </ul>
+          </li>
+          <li className="mb-10 ms-4">
+            <div className="absolute w-3 h-3 bg-teal rounded-full -start-1.5 border border-teal keep-border"></div>
+            <p className="mb-1 text-sm text-teal font-normal leading-none">
               <time dateTime="2024-03-05">Mar 5th</time> to{" "}
               <time dateTime="2024-03-13">Mar 13th, 2024</time>
             </p>

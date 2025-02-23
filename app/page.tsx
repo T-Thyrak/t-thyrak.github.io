@@ -5,6 +5,7 @@ import SkillsStage from "@/components/stages/skills";
 import ProjectsStage from "@/components/stages/projects";
 import { StickyButton } from "@/components/sticky";
 import UnderConstruction from "@/components/under_construction";
+import EducationStage from "@/components/stages/education";
 
 export default function Home() {
   const underConstruction = false;
@@ -35,6 +36,9 @@ function Content() {
       </FadeInObject>
       <FadeInObject className="flex flex-col items-center justify-center w-full h-full translate-y-4">
         <SkillsStage />
+      </FadeInObject>
+      <FadeInObject className="flex flex-col items-center justify-center w-full h-full translate-y-4">
+        <EducationStage />
       </FadeInObject>
       <FadeInObject className="flex flex-col items-center justify-center w-full h-full translate-y-4">
         <ProjectsStage />
